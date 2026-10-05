@@ -163,8 +163,8 @@ Itinerary:
 Format the final answer beautifully using these sections:
 
 1.Flight summary including departure, arrival, and duration.
-2.Hotel summary including name, location, and rating.
-3.Detailed day-wise itinerary with activities, timings, sightseeing, and tips.
+2.Hotel information about location , distance from flitghts, and get the real time prcing from th Tavily API for the hotels if available.
+3.Detailed day-wise itinerary that includes traspotation charges and places to visit give me the real time pricing from the Tavily API for the activities if available.
 4.Budget summary including estimated costs for flights, hotels, and activities.
 5.Important travel tips and recommendations.
 6.final recommendations for the user.
@@ -173,6 +173,7 @@ Important:
 - Be clear and practical.
 - Mention that live flight API may not provide ticket prices if pricing is unavailable.
 - Keep the response useful for real travel planning.
+-  Include the google maps link for the hotels and activities if available.
 """
 
     response = llm.invoke([
